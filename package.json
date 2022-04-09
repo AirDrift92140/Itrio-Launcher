@@ -1,12 +1,12 @@
 {
-    "name": "Selvania-Launcher",
+    "name": "Itrio-Launcher",
     "version": "3.0.0-beta.1",
-    "productName": "Selvania Launcher",
-    "description": "Launcher Mincraft custom (crack, premium)",
+    "productName": "Itrio Launcher",
+    "description": "Itrio Launcher (crack, premium)",
     "main": "src/index.html",
-    "author": "Luuxis",
+    "author": "Lepetil",
     "window": {
-        "title": "Selvania update",
+        "title": "Itrio update",
         "width": 400,
         "height": 500,
         "frame": false,
@@ -34,7 +34,7 @@
     },
     "license": "CC0",
     "build": {
-        "appId": "Selvania Launcher",
+        "appId": "Itrio Launcher",
         "nwVersion": "0.60.0",
         "packed": true,
         "args": ["--user-data-dir=./AppData/launcher data"],
@@ -60,7 +60,7 @@
         "overriddenProperties": {
             "main": "app/index.html",
             "window": {
-                "title": "Selvania update",
+                "title": "Itrio update",
                 "width": 400,
                 "height": 500,
                 "frame": false,
@@ -71,16 +71,16 @@
         },
         "outputPattern": "${NAME}-${PLATFORM}-${ARCH}",
         "win": {
-            "productName": "Selvania Launcher",
-            "companyName": "Selvania Launcher",
+            "productName": "Itrio Launcher",
+            "companyName": "Itrio Launcher",
             "copyright": "copyright",
             "icon": "src/assets/images/icon.ico"
         },
         "mac": {
-            "displayName": "Selvania-Launcher",
+            "displayName": "Itrio-Launcher",
             "copyright": "copyright",
             "plistStrings": {
-                "CFBundleIdentifier": "Selvania-Launcher"
+                "CFBundleIdentifier": "Itrio-Launcher"
             }
         },
         "nsis": {
