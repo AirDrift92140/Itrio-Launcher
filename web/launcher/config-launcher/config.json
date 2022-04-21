@@ -1,0 +1,13 @@
+{
+  "maintenance": false,
+  "maintenance_message": "El servidor está actualmente en mantenimiento.<br>Vuelve a intentarlo más tarde.",
+  "online": true,
+  "client_id": "",
+  "game_version": "1.12.2",
+  "custom": true,
+  "verify": true,
+  "java": true,
+  "game_args": [],
+  "dataDirectory": ".Itrio",
+  "ignored": ["config.json"]
+}

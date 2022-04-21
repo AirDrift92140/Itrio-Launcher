@@ -22,8 +22,8 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Je... vie...", "author": "Luuxis" },
-            { "message": "Salut je suis du code.", "author": "Luuxis" }
+            { "message": "Yo... vida...", "author": "Lepetil" },
+            { "message": "Hola soy codigo.", "author": "Lepetil" }
         ];
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -48,9 +48,9 @@ class Splash {
             if (res.maintenance) return this.shutdown(res.maintenance_message);
             else this.checkUpdate();
         }).catch(err => {
-            console.log("impossible de charger le config.json");
+            console.log("imposibe de cargar config.json");
             console.log(err);
-            return this.shutdown("Aucune connexion internet détectée,<br>veuillez réessayer ultérieurement.");
+            return this.shutdown("Ninguna conexion internet detectada,<br>Velve a intentarlo dentro de unos minutos.");
         })
     }
 
@@ -67,18 +67,18 @@ class Splash {
         });
 
         this.toggleProgress();
-        this.setStatus(`Téléchargement de la mise à jour`);
+        this.setStatus(`Instalando la actualizacion`);
         const file = await updater.download(manifest);
-        this.setStatus(`Décompression de la mise à jour`);
+        this.setStatus(`Descomprimiendo la actualizacion`);
         await updater.unpack(file);
         this.toggleProgress();
-        this.setStatus(`Redémarrage`);
+        this.setStatus(`Reiniciando`);
         await updater.restartToSwap();
     }
 
 
     startLauncher() {
-        this.setStatus(`Démarrage du launcher`);
+        this.setStatus(`Iniciando el luncher`);
         nw.Window.open("src/launcher.html", {
             "title": pkg.productName,
             "width": 1280,
@@ -93,10 +93,10 @@ class Splash {
     }
 
     shutdown(text) {
-        this.setStatus(`${text}<br>Arrêt dans 5s`);
+        this.setStatus(`${text}<br>Apagando en 5s`);
         let i = 4;
         setInterval(() => {
-            this.setStatus(`${text}<br>Arrêt dans ${i--}s`);
+            this.setStatus(`${text}<br>Apagando en ${i--}s`);
             if (i < 0) win.close();
         }, 1000);
     }

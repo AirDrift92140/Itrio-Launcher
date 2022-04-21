@@ -1,8 +1,8 @@
 {
-    "name": "Itrio-Launcher",
+    "name": "itrio-luncher",
     "version": "3.0.0-beta.1",
     "productName": "Itrio Launcher",
-    "description": "Itrio Launcher (crack, premium)",
+    "description": "Itrio Launcher ",
     "main": "src/index.html",
     "author": "Lepetil",
     "window": {
