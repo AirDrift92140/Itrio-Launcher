@@ -48,7 +48,7 @@ class Splash {
             if (res.maintenance) return this.shutdown(res.maintenance_message);
             else this.checkUpdate();
         }).catch(err => {
-            console.log("imposibe de cargar config.json");
+            console.log("Imposibe de cargar config.json");
             console.log(err);
             return this.shutdown("Ninguna conexion internet detectada,<br>Velve a intentarlo dentro de unos minutos.");
         })

@@ -16,7 +16,7 @@ let Dev = (window.navigator.plugins.namedItem('Native Client') !== null);
 class Launcher {
     async init() {
         this.initLog();
-        console.log("Initializing Launcher...");
+        console.log("Iniziando el launcher...");
         if (process.platform == "win32") this.initFrame();
         this.config = await config.config().then(res => res);
         this.database = await new database().init();
