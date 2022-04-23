@@ -18,7 +18,7 @@
         "node": "16.x.x"
     },
     "chromium-args": "--enable-logging --v=1",
-    "url": "http://launcher.selvania.fr",
+    "url": "localhost",
     "user": false,
     "webkit": {
         "plugin": true
@@ -37,8 +37,13 @@
         "appId": "Itrio Launcher",
         "nwVersion": "0.60.0",
         "packed": true,
-        "args": ["--user-data-dir=./AppData/launcher data"],
-        "targets": ["zip", "nsis7z"],
+        "args": [
+            "--user-data-dir=./AppData/launcher data"
+        ],
+        "targets": [
+            "zip",
+            "nsis7z"
+        ],
         "strippedProperties": [
             "description",
             "engines",
@@ -90,7 +95,9 @@
         }
     },
     "nodemonConfig": {
-        "ignore": ["app/*"],
+        "ignore": [
+            "app/*"
+        ],
         "ext": "js,html,css"
     },
     "devDependencies": {
