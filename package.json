@@ -18,7 +18,7 @@
         "node": "16.x.x"
     },
     "chromium-args": "--enable-logging --v=1",
-    "url": "localhost",
+    "url": "https://localhost",
     "user": false,
     "webkit": {
         "plugin": true
